@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOp {
     public String compareText(String text) {
         if ("Evozon".equals(text)) {
@@ -159,4 +162,36 @@ public class LogicalOp {
 
 
     }
+
+    public int[] populateArray(int length){
+        int[] myArray = new int[length];
+        for (int i = 0; i < length; i++) {
+            myArray[i] = i + 1;
+        }
+        return myArray;
+
+    }
+
+    public  int[] populateEvenNumbers(int length) {
+        int[] evenNumbers = new int[length];
+        int index = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenNumbers[index++] = i;
+            }
+        }
+        return evenNumbers;
+    }
+
+    public double averageOfNumbersInArray (int[] array) {
+        int sum = 0;
+        for (int number : array) {
+            sum += number;
+        }
+        return (double) sum / array.length;
+    }
+
+
+
 }
+

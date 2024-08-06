@@ -1,9 +1,14 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
         LogicalOp logicalOp = new LogicalOp();
+        Calculator calculator = new Calculator();
+        Print print = new Print();
+
 
         //if else ex 4
         String result = logicalOp.compareText("Evozon");
@@ -64,6 +69,22 @@ public class Main {
 
         //for loops ex 9
         LogicalOp.displayPattern();
+
+        //arrays ex 2
+        int[] myArray = logicalOp.populateArray(100);
+        print.printArray(myArray);
+
+        //arrays ex 3
+        int[] evenNumbers = logicalOp.populateEvenNumbers(50);
+        print.printEvenNumb(evenNumbers);
+
+        //arrays ex 4
+        int[] numbers = {14, 22, 30, 49, 61};
+        double average = logicalOp.averageOfNumbersInArray(numbers);
+        System.out.println(average);
+
+        //lists ex 1
+
 
 
 
